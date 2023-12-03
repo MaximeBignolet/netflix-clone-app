@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for my netflix app clone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximeBignolet/netflix-clone-app.git"
+  },
+  "author": "Maxime Bignolet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximeBignolet/netflix-clone-app/issues"
+  },
+  "homepage": "https://github.com/MaximeBignolet/netflix-clone-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.2",
+    "nodemon": "^3.0.2"
+  }
+}
