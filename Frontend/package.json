@@ -23,5 +23,9 @@
     "pinia": "^2.1.7",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@vueuse/integrations": "^10.6.1",
+    "universal-cookie": "^6.1.1"
   }
 }

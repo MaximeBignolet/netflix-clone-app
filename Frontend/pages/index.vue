@@ -7,7 +7,3 @@
   Home page
 </div>
 </template>
-
-<style scoped>
-
-</style>

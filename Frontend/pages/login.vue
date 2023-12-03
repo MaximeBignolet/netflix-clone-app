@@ -9,6 +9,6 @@
 import {definePageMeta} from "#imports";
 import LoginModal from "~/components/login/LoginModal.vue";
 
-definePageMeta({layout: 'login', middleware:'auth'})
+definePageMeta({layout: 'login'})
 
 </script>;

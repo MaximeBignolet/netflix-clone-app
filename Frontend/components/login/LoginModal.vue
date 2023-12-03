@@ -1,18 +1,31 @@
 <script setup lang="ts">
+import {useCookie, useFetch} from "#app";
 import {RouteHelper} from "~/helpers/route-helper";
-const email= ref<string>('')
-const password= ref<string>('')
 
-const user = {
-  email: "max@max.fr",
-  password: 'password'
-}
+const formData = ref({
+  email: '',
+  password: ''
 
-const handleSubmit = () => {
-  if(email.value === user.email && password.value === user.password){
-    navigateTo(RouteHelper.HOME)
+})
+
+const token = useCookie('token')
+async function handleSubmit(){
+  try{
+   await useFetch('http://localhost:5000/api/auth/login', {
+    method: 'post',
+    body: {
+      email: formData.value.email,
+      password: formData.value.password
+    },
+  }).then((res: any) => token.value = res.data.value.token)
+    if(token.value){
+      navigateTo(RouteHelper.HOME)
+    }
+  }catch(e) {
+    console.log(e)
   }
 }
+
 
 </script>
 
@@ -21,14 +34,14 @@ const handleSubmit = () => {
     <div class="container mx-auto flex flex-col justify-center h-screen w-1/4">
       <div class="bg-black/80 rounded p-20">
       <p class="lg:text-white lg:font-semibold text-4xl">Sign In</p>
-        <form @submit.prevent="handleSubmit" method="post">
+        <form  method="post" @submit.prevent="handleSubmit">
           <div class="lg:flex lg:flex-col gap-2">
           <label for="email"></label>
-          <input type="email" v-model="email" name="email" id="email" placeholder="Entrez votre addresse e-mail" class="rounded mt-10 h-12 w-full bg-gray-950 text-white placeholder:pl-2"/>
+          <input type="email" v-model="formData.email" name="email" id="email" placeholder="Entrez votre addresse e-mail" class="rounded mt-10 h-12 w-full bg-gray-950 text-white placeholder:pl-2"/>
           </div>
           <div class="lg:flex lg:flex-col gap-2">
             <label for="password"></label>
-            <input type="password"  v-model="password" name="password" id="password" placeholder="Password" class="rounded h-12  bg-gray-950 w-full text-white placeholder:pl-3"/>
+            <input type="password"  v-model="formData.password" name="password" id="password" placeholder="Password" class="rounded h-12  bg-gray-950 w-full text-white placeholder:pl-3"/>
           </div>
           <button type="submit" class="text-center text-white text-2xl bg-[#E50914] p-1 rounded mt-8 w-full">Sign In</button>
           <br>
