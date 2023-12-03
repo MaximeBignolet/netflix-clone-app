@@ -6,4 +6,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   ssr: false,
+  imports: {
+    autoImport: true
+  }
+
 })

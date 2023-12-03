@@ -46,7 +46,7 @@ async function handleSubmit(){
           <button type="submit" class="text-center text-white text-2xl bg-[#E50914] p-1 rounded mt-8 w-full">Sign In</button>
           <br>
           <div class="flex items-center mt-3 justify-between">
-            <div>
+            <div class="flex items-center">
               <input type="checkbox" name="rememberMe" id="rememberMe"  />
               <label for="rememberMe" class="text-gray-500 ml-2 text-xs">Remember me</label>
             </div>
