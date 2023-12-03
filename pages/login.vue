@@ -1,13 +1,14 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-<div >
-  login page
-</div>
+  <div>
+    <NetlixTitle/>
+    <LoginModal/>
+  </div>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import {definePageMeta} from "#imports";
+import LoginModal from "~/components/login/LoginModal.vue";
 
-</style>
+definePageMeta({layout: 'login'})
+
+</script>;
