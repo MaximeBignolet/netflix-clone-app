@@ -1,18 +1,16 @@
 <template>
-  <div >
+  <div>
     <NuxtLayout>
       <v-app>
-      <NuxtPage/>
+        <NuxtPage />
       </v-app>
     </NuxtLayout>
   </div>
 </template>
 
 <script lang="ts" setup>
-
 useHead({
-  link: [{rel: 'icon', type: 'image/png', href:'/favicon.png'}],
-  title: 'Netflix Clone App'
-})
-
+  link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+  title: "Netflix Clone App",
+});
 </script>
