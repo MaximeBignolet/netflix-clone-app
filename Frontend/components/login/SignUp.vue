@@ -20,10 +20,10 @@ const onClickNavigateToLoginPage = () => {
       </p>
     </div>
     <div
-      class="absolute z-10 lg:h-[202px] h-[32px] lg:w-[130%] w-full lg:left-[-15%] bottom-0 after-signup"
+      class="absolute z-10 lg:h-[252px] lg:w-[130%] w-full lg:left-[-15%] bottom-0 after-signup"
     ></div>
     <div
-      class="absolute z-10 lg:h-[200px] h-[30px] lg:w-[130%] top-[90%] w-full lg:left-[-15%] bottom-0 signup"
+      class="absolute z-10 lg:h-[250px] lg:w-[130%] ] w-full lg:left-[-15%] bottom-0 signup"
     ></div>
     <div class="relative">
       <v-carousel
