@@ -2,104 +2,113 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import SignupForm from "~/components/login/SignupForm.vue";
 import { RouteHelper } from "~/helpers/route-helper";
-
+import CardSignup from "./CardSignup.vue";
 const onClickNavigateToLoginPage = () => {
   navigateTo(RouteHelper.LOGIN);
 };
 </script>
 
 <template>
-  <div class="z-20">
-    <NetlixTitle />
-    <p
-      class="bg-[#E50914] shadow text-white lg:p-1.5 p-1 lg:text-lg text-sm font-bold rounded-md lg:w-1/12 absolute lg:right-8 lg:top-16 right-2 top-28 cursor-pointer text-center"
-      @click="onClickNavigateToLoginPage"
-    >
-      S'identifier
-    </p>
-  </div>
-  <div
-    class="absolute z-10 lg:h-[140px] h-[36px] lg:w-[130%] w-full lg:left-[-15%] bottom-0 after-signup"
-  ></div>
-  <div
-    class="absolute z-20 lg:h-[136px] h-[33px] lg:w-[130%] w-full lg:left-[-15%] bottom-0 signup"
-  ></div>
-  <div class="relative">
-    <v-carousel
-      height="1024"
-      hide-delimiters
-      :show-arrows="false"
-      cycle
-      :interval="4000"
-    >
-      <v-carousel-item src="/carousel-signup/signup_bg.png" cover class="z-0">
-        <div class="h-full flex flex-col justify-center mx-3">
-          <h2
-            class="text-white lg:text-5xl text-2xl lg:w-1/3 lg:pl-28 font-semibold"
-          >
-            Films et séries en illimité, et bien plus
-          </h2>
-          <p class="text-white lg:text-xl lg:w-1/3 lg:pl-28 font-semibold mt-5">
-            À partir de 5,99€. Annulez à tout moment.
-          </p>
-          <SignupForm />
-        </div>
-      </v-carousel-item>
-      <v-carousel-item
-        src="/carousel-signup/christmas_series.webp"
-        cover
-        class="z-0"
+  <div>
+    <div class="z-20 relative">
+      <NetlixTitle />
+      <p
+        class="bg-[#E50914] shadow text-white lg:p-1.5 p-1 lg:text-lg text-sm font-bold rounded-md lg:w-1/12 absolute lg:right-8 lg:top-16 right-2 top-28 cursor-pointer text-center"
+        @click="onClickNavigateToLoginPage"
       >
-        <div class="h-full flex flex-col justify-center mx-3">
-          <div>
-            <p
-              class="text-lg lg:ml-28 bg-[#040F03]/50 rounded-lg w-fit p-2 font-semibold"
+        S'identifier
+      </p>
+    </div>
+    <div
+      class="absolute z-10 lg:h-[202px] h-[32px] lg:w-[130%] w-full lg:left-[-15%] bottom-0 after-signup"
+    ></div>
+    <div
+      class="absolute z-10 lg:h-[200px] h-[30px] lg:w-[130%] top-[90%] w-full lg:left-[-15%] bottom-0 signup"
+    ></div>
+    <div class="relative">
+      <v-carousel
+        height="1024"
+        hide-delimiters
+        :show-arrows="false"
+        cycle
+        :interval="4000"
+      >
+        <v-carousel-item src="/carousel-signup/signup_bg.png" cover class="z-0">
+          <div class="h-full flex flex-col justify-center mx-3">
+            <h2
+              class="text-white lg:text-5xl text-2xl lg:w-1/3 lg:pl-28 font-semibold"
             >
-              <font-awesome-icon icon="fire" class="text-[#FF8A15] mr-2" /><span
-                class="text-white"
-                >Tendances actuelles</span
+              Films et séries en illimité, et bien plus
+            </h2>
+            <p
+              class="text-white lg:text-xl lg:w-1/3 lg:pl-28 font-semibold mt-5"
+            >
+              À partir de 5,99€. Annulez à tout moment.
+            </p>
+            <SignupForm />
+          </div>
+        </v-carousel-item>
+        <v-carousel-item
+          src="/carousel-signup/christmas_series.webp"
+          cover
+          class="z-0"
+        >
+          <div class="h-full flex flex-col justify-center mx-3">
+            <div>
+              <p
+                class="text-lg lg:ml-28 bg-[#040F03]/50 rounded-lg w-fit p-2 font-semibold"
               >
-            </p>
-            <img
-              src="/carousel-signup/carousel-christmas-paragraph.webp"
-              alt="Fête de Noël"
-              class="h-20 lg:pl-28 my-3"
-            />
-            <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
-              Lorsqu'un coup du destin réunit leurs familles pour Noël,
-              Charlotte saisit l'occasion de démontrer que la vie de sa vieille
-              amie Jackie est trop belle pour être vraie.
-            </p>
+                <font-awesome-icon
+                  icon="fire"
+                  class="text-[#FF8A15] mr-2"
+                /><span class="text-white">Tendances actuelles</span>
+              </p>
+              <img
+                src="/carousel-signup/carousel-christmas-paragraph.webp"
+                alt="Fête de Noël"
+                class="h-20 lg:pl-28 my-3"
+              />
+              <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
+                Lorsqu'un coup du destin réunit leurs familles pour Noël,
+                Charlotte saisit l'occasion de démontrer que la vie de sa
+                vieille amie Jackie est trop belle pour être vraie.
+              </p>
+            </div>
+            <SignupForm />
           </div>
-          <SignupForm />
-        </div>
-      </v-carousel-item>
-      <v-carousel-item src="/carousel-signup/the_crown.webp" cover class="z-0">
-        <div class="h-full flex flex-col justify-center mx-3">
-          <div>
-            <p
-              class="text-lg lg:ml-28 bg-[#040F03]/50 rounded-lg w-fit p-2 font-semibold"
-            >
-              <font-awesome-icon
-                icon="fire"
-                class="text-[#FF8A15] lg:mr-2"
-              /><span class="text-white">Tendances actuelles</span>
-            </p>
-            <img
-              src="/carousel-signup/the_crown_paragraph.webp"
-              alt="Fête de Noël"
-              class="lg:pl-28 h-14 py-3"
-            />
-            <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
-              Inspirée de faits réels, cette adaptation retrace l'histoire de la
-              reine Élisabeth II, évoquant les événements politiques et
-              personnels qui ont marqué son règne.
-            </p>
+        </v-carousel-item>
+        <v-carousel-item
+          src="/carousel-signup/the_crown.webp"
+          cover
+          class="z-0"
+        >
+          <div class="h-full flex flex-col justify-center mx-3">
+            <div>
+              <p
+                class="text-lg lg:ml-28 bg-[#040F03]/50 rounded-lg w-fit p-2 font-semibold"
+              >
+                <font-awesome-icon
+                  icon="fire"
+                  class="text-[#FF8A15] lg:mr-2"
+                /><span class="text-white">Tendances actuelles</span>
+              </p>
+              <img
+                src="/carousel-signup/the_crown_paragraph.webp"
+                alt="Fête de Noël"
+                class="lg:pl-28 h-14 py-3"
+              />
+              <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
+                Inspirée de faits réels, cette adaptation retrace l'histoire de
+                la reine Élisabeth II, évoquant les événements politiques et
+                personnels qui ont marqué son règne.
+              </p>
+            </div>
+            <SignupForm />
           </div>
-          <SignupForm />
-        </div>
-      </v-carousel-item>
-    </v-carousel>
+        </v-carousel-item>
+      </v-carousel>
+    </div>
+    <CardSignup />
   </div>
 </template>
 
