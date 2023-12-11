@@ -1,5 +1,5 @@
 export class RouteHelper {
     static HOME = `/`
     static LOGIN = '/login'
-    static SIGNUP = '/signUp'
+    static SIGNUP = '/signup'
 }

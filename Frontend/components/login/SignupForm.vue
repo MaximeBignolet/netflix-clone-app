@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <p class="text-gray-500 text-lg lg:w-2/5 lg:pl-28 font-semibold mt-2">
+  <p class="text-[#B8B7B5] text-lg font-light">
     Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner
     ou réactiver votre abonnement.
   </p>
-  <form method="post" class="lg:pl-28">
+  <form method="post">
     <div class="flex items-center mt-2 gap-2">
       <input
         type="email"

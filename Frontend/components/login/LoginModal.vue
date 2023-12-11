@@ -32,9 +32,9 @@ const onClickOnSignupNow = () => {
 </script>
 
 <template>
-  <div class="lg:h-screen">
-    <div class="p-10">
-      <div class="bg-black/80 mt-20">
+  <div class="lg:h-screen lg:flex lg:flex-col lg:justify-between">
+    <div class="p-10 lg:flex lg:justify-center lg:items-center h-full lg:p-0">
+      <div class="bg-black/80 mt-20 lg:w-1/4 lg:p-10">
         <p class="text-white p-5 text-4xl font-bold">Sign In</p>
         <form method="post" @submit.prevent="handleSubmit" class="px-4">
           <div class="flex flex-col">
