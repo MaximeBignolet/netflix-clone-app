@@ -1,20 +1,50 @@
 <template>
-  <div class="flex flex-col">
-    <div class="flex justify-center">
-      <NetlixTitle />
+  <div class="bg-black">
+    <div class="flex flex-col lg:flex-row lg:items-center container mx-auto">
+      <div class="flex justify-center lg:block">
+        <NetlixTitle />
+      </div>
+      <div class="lg:w-1/2">
+        <nav>
+          <ul
+            class="flex justify-around lg:justify-evenly mt-4 text-sm lg:text-xl text-gray-600"
+          >
+            <li>
+              <NuxtLink :to="RouteHelper.HOME" activeClass="text-white"
+                >Home</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink :to="RouteHelper.TV_SHOWS" activeClass="text-white"
+                >TV Shows</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink :to="RouteHelper.MOVIES" activeClass="text-white"
+                >Movies</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="RouteHelper.NEW_AND_POPULAR"
+                activeClass="text-white"
+                >New / Popular</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink :to="RouteHelper.MY_LIST" activeClass="text-white"
+                >My List</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink :to="RouteHelper.CATEGORY" activeClass="text-white"
+                >Category</NuxtLink
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav>
-      <ul class="flex justify-around mt-4 text-sm">
-        <li><NuxtLink :to="RouteHelper.HOME">Home</NuxtLink></li>
-        <li><NuxtLink :to="RouteHelper.TV_SHOWS">TV Shows</NuxtLink></li>
-        <li><NuxtLink :to="RouteHelper.MOVIES">Movies</NuxtLink></li>
-        <li>
-          <NuxtLink :to="RouteHelper.NEW_AND_POPULAR">New / Popular</NuxtLink>
-        </li>
-        <li><NuxtLink :to="RouteHelper.MY_LIST">My List</NuxtLink></li>
-        <li><NuxtLink :to="RouteHelper.CATEGORY">Category</NuxtLink></li>
-      </ul>
-    </nav>
   </div>
 </template>
 
