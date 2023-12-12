@@ -1,6 +1,8 @@
 <template>
   <div class="bg-black">
-    <div class="flex flex-col lg:flex-row lg:items-center container mx-auto">
+    <div
+      class="flex flex-col lg:flex-row lg:items-center container mx-auto py-4"
+    >
       <div class="flex justify-center lg:block">
         <NetlixTitle />
       </div>
