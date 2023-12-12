@@ -20,6 +20,11 @@ const onClickNavigateToLoginPage = () => {
       </p>
     </div>
     <div class="relative">
+      <div
+        class="absolute bottom-1/4 z-20 mx-4 lg:pl-28 lg:bottom-[27%] lg:w-2/3"
+      >
+        <SignupForm />
+      </div>
       <v-carousel
         height="1024"
         hide-delimiters
@@ -39,9 +44,6 @@ const onClickNavigateToLoginPage = () => {
             >
               À partir de 5,99€. Annulez à tout moment.
             </p>
-            <div class="lg:w-2/5 lg:pl-28 mt-2">
-              <SignupForm />
-            </div>
           </div>
         </v-carousel-item>
         <v-carousel-item
@@ -70,9 +72,7 @@ const onClickNavigateToLoginPage = () => {
                 vieille amie Jackie est trop belle pour être vraie.
               </p>
             </div>
-            <div class="lg:w-2/5 lg:pl-28 mt-2">
-              <SignupForm />
-            </div>
+            <div class="lg:w-2/5 lg:pl-28 mt-2"></div>
           </div>
         </v-carousel-item>
         <v-carousel-item
@@ -101,9 +101,7 @@ const onClickNavigateToLoginPage = () => {
                 personnels qui ont marqué son règne.
               </p>
             </div>
-            <div class="lg:w-2/5 lg:pl-28 mt-2">
-              <SignupForm />
-            </div>
+            <div class="lg:w-2/5 lg:pl-28 mt-2"></div>
           </div>
         </v-carousel-item>
       </v-carousel>

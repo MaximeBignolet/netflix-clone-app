@@ -1,11 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouteHelper } from "~/helpers/route-helper";
+import { useEmailStore } from "~/store/emailStore";
+
+const store = useEmailStore();
+const email = computed({
+  get: () => store.email,
+  set: (value) => store.setEmail(value),
+});
+
+const onClickGoToRegistration = () => {
+  navigateTo(RouteHelper.REGISRATION);
+};
+</script>
 
 <template>
-  <p class="text-[#B8B7B5] text-lg font-light">
+  <p class="text-[#C9C8C7] text-lg font-light">
     Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner
     ou réactiver votre abonnement.
   </p>
-  <form method="post">
+  <form method="post" @submit.prevent="onClickGoToRegistration">
     <div class="flex items-center mt-2 gap-2">
       <input
         type="email"
@@ -13,6 +26,8 @@
         id=""
         placeholder="Adresse email"
         class="placeholder:text-[#B7BAB8] lg:w-72 text-white"
+        required
+        v-model="email"
       />
       <button
         type="submit"
