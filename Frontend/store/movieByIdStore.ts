@@ -12,13 +12,15 @@ export const useMovieByIdStore = defineStore("movieByIdStore", {
           method: "GET",
           headers: {
             accept: "application/json",
-            Authorization: "Bearer YOUR_TOKEN",
+            Authorization: 
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxN2IxYzRkNjhhNTEzMzZiYmM3Y2QwNzk5MmFkYTI2NCIsInN1YiI6IjYzOTVhNmE5YTBmMWEyMDBhMDk4N2FiMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Y_reeKFsR8pDE5IIl_bkmYt11NX4kG37FjHFIn9s4vA",
           },
         };
         const response = await fetch(url, options);
         if (response.ok) {
           const json = await response.json();
-          this.movie = json; // Assign the fetched data to movie
+          this.movie = json;
+           // Assign the fetched data to movie
         } else {
           throw new Error('Erreur de réponse de l\'API');
         }
