@@ -4,10 +4,13 @@
       class="flex flex-col lg:flex-row lg:items-center lg:justify-between container mx-auto py-4"
     >
       <div
-        class="flex justify-center lg:block cursor-pointer"
+        class="flex lg:justify-center justify-between mx-5 items-center lg:block cursor-pointer"
         @click="onClickGetBackToHome"
       >
         <NetlixTitle />
+        <div v-show="!isLargeScreen">
+          <User />
+        </div>
       </div>
       <div class="lg:w-1/2">
         <nav>
@@ -49,7 +52,9 @@
           </ul>
         </nav>
       </div>
-      <User />
+      <div v-show="isLargeScreen">
+        <User />
+      </div>
     </div>
   </div>
 </template>
@@ -57,6 +62,8 @@
 <script setup lang="ts">
 import { RouteHelper } from "~/helpers/route-helper";
 import User from "./User.vue";
+
+const isLargeScreen = useMediaQuery("(min-width: 1024px)");
 
 const onClickGetBackToHome = () => {
   navigateTo(RouteHelper.HOME);
