@@ -15,7 +15,7 @@
       <div class="lg:w-1/2">
         <nav>
           <ul
-            class="flex justify-around lg:justify-evenly mt-4 text-sm lg:text-xl text-gray-500"
+            class="flex justify-around lg:justify-evenly mt-4 text-sm lg:text-xl text-gray-400"
           >
             <li>
               <NuxtLink :to="RouteHelper.HOME" activeClass="text-white"

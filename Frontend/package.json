@@ -36,6 +36,8 @@
     "@mdi/font": "^7.3.67",
     "@vueuse/integrations": "^10.6.1",
     "date-fns": "^2.30.0",
-    "universal-cookie": "^6.1.1"
+    "universal-cookie": "^6.1.1",
+    "vue-carousel": "^0.18.0",
+    "vue3-carousel-nuxt": "^1.1.0"
   }
 }

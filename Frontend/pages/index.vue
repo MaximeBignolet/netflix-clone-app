@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen w-screen b-cover"
+    class="h-screen w-screen bg-cover"
     :class="[
       isLargeScreen
         ? 'bg-[url(/home-bg/home-bg.jpeg)]'
@@ -35,8 +35,9 @@
               Seasons: <span class="text-gray-500">3 (5 Episodes)</span>
             </p>
           </div>
-          <p class="text-gray-500 mr-10 mt-5 lg:w-1/2">{{ show.overview }}</p>
+          <p class="text-gray-500 mr-10 mt-5 lg:w-2/5">{{ show.overview }}</p>
           <StarsRating :initialRating="show.vote_average / 2" class="pt-2" />
+          <HomePageCarouselHome />
         </div>
       </div>
     </div>

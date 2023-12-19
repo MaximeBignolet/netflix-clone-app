@@ -18,7 +18,7 @@ export const useMovieApiStore = defineStore("movieApiStore", {
         };
         await fetch(url, options)
           .then((res) => res.json())
-          .then((json) => (console.log(json)))
+          .then((json) => this.data = json)
           .catch((err) => console.error("error:" + err));
       } catch (error) {
         console.log(error);
