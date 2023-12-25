@@ -5,7 +5,7 @@ export const useMovieByIdStore = defineStore("movieByIdStore", {
     movie: null as MovieById | null, // movie is a single instance of MovieById or null
   }),
   actions: {
-    async fetchData(id: number) {
+    async fetchData(id: number | null) {
       try {
         const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
         const options = {

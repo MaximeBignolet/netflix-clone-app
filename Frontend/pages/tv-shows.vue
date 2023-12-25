@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gradient-to-r from-[#080A15] to-[#1E2C35] min-h-screen">
     <NavbarVue />
   </div>
 </template>

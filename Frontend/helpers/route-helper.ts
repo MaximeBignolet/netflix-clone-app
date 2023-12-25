@@ -8,4 +8,5 @@ export class RouteHelper {
     static NEW_AND_POPULAR = '/new-and-popular'
     static MY_LIST = '/my-list'
     static CATEGORY = '/category'
+    static MOVIE_DETAILS = '/movies-details-'
 }
