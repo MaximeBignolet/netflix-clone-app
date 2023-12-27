@@ -27,11 +27,8 @@
 <script setup lang="ts">
 import { RouteHelper } from "~/helpers/route-helper";
 import { useMovieApiStore } from "~/store/apiStore";
-import { useMovieByIdStore } from "~/store/movieByIdStore";
 
 const getAllMoviesFromStore = useMovieApiStore();
-const getMoviesById = useMovieByIdStore();
-const movieId = ref<number | null>(null);
 
 onMounted(async () => {
   await getAllMoviesFromStore.fetchData();

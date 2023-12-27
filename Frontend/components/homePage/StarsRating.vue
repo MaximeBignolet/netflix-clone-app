@@ -2,7 +2,10 @@
   <div class="star-rating flex gap-1">
     <span v-for="star in totalStars" :key="star" class="star">
       <font-awesome-icon
-        :class="{ 'full-star': star <= rating, 'empty-star': star > rating }"
+        :class="{
+          'full-star': star <= computedRating,
+          'empty-star': star > computedRating,
+        }"
         icon="star"
       />
     </span>
@@ -22,6 +25,10 @@ const props = defineProps({
 });
 
 const rating = ref(props.initialRating);
+
+const computedRating = computed(() => {
+  return Math.round(rating.value + 0.49);
+});
 </script>
 <style scoped>
 .star-rating .star {

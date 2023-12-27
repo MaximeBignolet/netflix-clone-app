@@ -7,7 +7,7 @@
         <img
           :src="`https://image.tmdb.org/t/p/w500${getMoviesById.movie?.poster_path}`"
           :alt="getMoviesById.movie?.overview"
-          class="h-44 object-cover rounded-md shadow-md"
+          class="w-screen object-cover h-1/2 rounded-md shadow-md"
         />
       </div>
     </div>

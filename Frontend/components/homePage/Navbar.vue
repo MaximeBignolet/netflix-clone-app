@@ -4,7 +4,7 @@
       class="flex flex-col lg:flex-row lg:items-center lg:justify-between container mx-auto py-4"
     >
       <div
-        class="flex lg:justify-center justify-between mx-5 items-center lg:block cursor-pointer"
+        class="flex lg:justify-center justify-between pt-2 items-center lg:block cursor-pointer"
         @click="onClickGetBackToHome"
       >
         <NetlixTitle />
@@ -15,7 +15,7 @@
       <div class="lg:w-1/2">
         <nav>
           <ul
-            class="flex justify-around lg:justify-evenly mt-4 text-sm lg:text-xl text-gray-400"
+            class="flex justify-center lg:gap-10 gap-5 mt-4 text-sm lg:text-xl text-gray-400"
           >
             <li>
               <NuxtLink :to="RouteHelper.HOME" activeClass="text-white"
@@ -30,13 +30,6 @@
             <li>
               <NuxtLink :to="RouteHelper.MOVIES" activeClass="text-white"
                 >Movies</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
-                :to="RouteHelper.NEW_AND_POPULAR"
-                activeClass="text-white"
-                >New / Popular</NuxtLink
               >
             </li>
             <li>
