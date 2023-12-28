@@ -1,75 +1,35 @@
-# Nuxt 3 Minimal Starter
+# Devflix
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Clone of Netflix web app
 
-## Setup
+![](header.png)
 
-Make sure to install the dependencies:
+## Installation
 
-```bash
-# npm
+OS X & Linux & Windows:
+
+```sh
+git clone https://github.com/MaximeBignolet/netflix-clone-app.git
+
+cd Frontend/
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+cd Backend
+npm install
+npm start
 ```
 
-## Production
+## Meta
 
-Build the application for production:
+Maxime Bignolet – [@Linkedin](https://www.linkedin.com/in/maxime-bignolet-8228bb219/) - https://www.linkedin.com/in/maxime-bignolet-8228bb219/
 
-```bash
-# npm
-npm run build
+Github - https://github.com/MaximeBignolet
 
-# pnpm
-pnpm run build
+## Contributing
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Fork it
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -m "your commit"'`)
+4. Push to the branch (`git push origin main`)
+5. Create a new Pull Request
