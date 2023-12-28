@@ -16,7 +16,7 @@
       <div>
         <p class="text-gray-500 text-lg cursor-pointer mb-2">Centre d'aide</p>
         <p class="text-gray-500 text-lg cursor-pointer mb-2">
-          Information sur Netflix
+          Information sur Devflix
         </p>
       </div>
       <div>

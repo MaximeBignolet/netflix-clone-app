@@ -15,7 +15,7 @@ const onClickGoToRegistration = () => {
 
 <template>
   <p class="text-[#C9C8C7] text-lg font-light">
-    Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner
+    Prêt à regarder Devflix ? Saisissez votre adresse e-mail pour vous abonner
     ou réactiver votre abonnement.
   </p>
   <form method="post" @submit.prevent="onClickGoToRegistration">

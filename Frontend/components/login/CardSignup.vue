@@ -13,7 +13,7 @@
       >
         <div class="flex flex-col lg:max-h-10 my-3 lg:my-0">
           <h2 class="text-white font-semibold lg:text-xl text-sm">
-            Netflix comme vous l'aimez pour seulement 5,99 €.
+            Devflix comme vous l'aimez pour seulement 5,99 €.
           </h2>
           <p class="text-white font-semibold text-xs lg:text-base">
             Profitez de notre offre avec pub, la plus économique.
@@ -33,9 +33,9 @@
           <div
             class="bg-gradient-to-br from-[#1A2145] lg:rounded-lg flex flex-col justify-between to-[#200E19] p-3 rounded-md"
           >
-            <h3 class="font-bold text-xl">Regardez Netflix sur votre TV</h3>
+            <h3 class="font-bold text-xl">Regardez Devflix sur votre TV</h3>
             <p class="text-gray-200 pt-5 text-sm w-[95%]">
-              Regardez Netflix sur votre Smart TV, PlayStation, Xbox,
+              Regardez Devflix sur votre Smart TV, PlayStation, Xbox,
               Chromecast, Apple TV, lecteur Blu-ray et bien plus.
             </p>
             <div class="flex justify-end">
@@ -92,10 +92,10 @@
                 collapse-icon="mdi-minus"
                 class="font-bold"
               >
-                <p class="text-lg">Netflix, qu'est-ce que c'est ?</p>
+                <p class="text-lg">Devflix, qu'est-ce que c'est ?</p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Netflix est un service de streaming qui propose une vaste
+                Devflix est un service de streaming qui propose une vaste
                 sélection de séries, films, animes, documentaires et autres
                 programmes sur des milliers d'appareils connectés à Internet.
               </v-expansion-panel-text>
@@ -115,10 +115,10 @@
                 collapse-icon="mdi-minus"
                 class="font-bold"
               >
-                <p class="text-xl">Combien coûte Netflix ?</p>
+                <p class="text-xl">Combien coûte Devflix ?</p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Regardez Netflix sur votre smartphone, tablette, Smart TV,
+                Regardez Devflix sur votre smartphone, tablette, Smart TV,
                 ordinateur ou appareil de streaming, le tout pour un tarif
                 mensuel fixe. Les offres vont de 5,99 € à 19,99 € par mois. Pas
                 de contrat ni de frais supplémentaires.
@@ -134,20 +134,20 @@
                 collapse-icon="mdi-minus"
                 class="font-bold"
               >
-                <p class="text-xl">Où puis-je regarder Netflix ?</p>
+                <p class="text-xl">Où puis-je regarder Devflix ?</p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Netflix, c'est où vous voulez, quand vous voulez. Connectez-vous
-                à votre compte pour regarder Netflix en ligne sur netflix.com
+                Devflix, c'est où vous voulez, quand vous voulez. Connectez-vous
+                à votre compte pour regarder Devflix en ligne sur Devflix.com
                 depuis votre ordinateur ou tout appareil connecté à Internet
-                avec l'application Netflix, comme les Smart TV, smartphones,
+                avec l'application Devflix, comme les Smart TV, smartphones,
                 tablettes, lecteurs de streaming et consoles de jeu.
               </v-expansion-panel-text>
               <v-expansion-panel-text>
                 Vous pouvez aussi télécharger vos séries préférées avec
                 l'application iOS, Android ou Windows 10. Téléchargez des titres
                 pour les regarder sur votre appareil mobile, même sans connexion
-                Internet. Emportez Netflix partout avec vous.
+                Internet. Emportez Devflix partout avec vous.
               </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -163,7 +163,7 @@
                 <p class="text-xl">Comment puis-je annuler mon offre ?</p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Netflix offre une grande souplesse. Pas de contrat compliqué.
+                Devflix offre une grande souplesse. Pas de contrat compliqué.
                 Sans engagement. Deux clics suffisent pour annuler votre compte
                 en ligne. Pas de frais d'annulation : ouvrez ou fermez votre
                 compte à tout moment.
@@ -179,12 +179,12 @@
                 collapse-icon="mdi-minus"
                 class="font-bold"
               >
-                <p class="text-xl">Que puis-je regarder sur Netflix ?</p>
+                <p class="text-xl">Que puis-je regarder sur Devflix ?</p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Netflix propose un vaste catalogue comprenant notamment des
+                Devflix propose un vaste catalogue comprenant notamment des
                 longs-métrages, des documentaires, des séries, des animes et des
-                programmes originaux Netflix primés. Regardez Netflix à volonté,
+                programmes originaux Devflix primés. Regardez Devflix à volonté,
                 quand vous le voulez.
               </v-expansion-panel-text>
             </v-expansion-panel>
@@ -199,11 +199,11 @@
                 class="font-bold"
               >
                 <p class="text-xl">
-                  Est-ce que Netflix est adapté aux enfants ?
+                  Est-ce que Devflix est adapté aux enfants ?
                 </p>
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                Netflix Jeunesse est inclus dans votre abonnement et offre un
+                Devflix Jeunesse est inclus dans votre abonnement et offre un
                 meilleur contrôle aux parents, ainsi qu'un espace dédié aux
                 enfants, avec des films et des séries destinés à toute la
                 famille.

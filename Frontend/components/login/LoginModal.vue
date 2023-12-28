@@ -84,7 +84,7 @@ const onClickOnSignupNow = () => {
         </form>
         <div class="p-3 mt-3">
           <p class="text-gray-500 text-xs">
-            New to Netflix ?
+            New to Devflix ?
             <span
               class="text-white cursor-pointer underline"
               @click="onClickOnSignupNow"
