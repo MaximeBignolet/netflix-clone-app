@@ -9,7 +9,6 @@
           how to awaken our senses. And with so many titles available, there's
           so much to discover!
         </p>
-        <FontAwesomeIcon :icon="faStarHalf" class="text-yellow-300" />
       </div>
       <div class="lg:grid lg:grid-cols-4 gap-5 my-10 mx-4">
         <div
@@ -43,13 +42,12 @@
 </template>
 
 <script setup lang="ts">
-import { faStarHalf } from "@fortawesome/pro-duotone-svg-icons";
-import { faHamburger } from "@fortawesome/pro-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import NavbarVue from "~/components/homePage/Navbar.vue";
 import StarsRating from "~/components/homePage/StarsRating.vue";
 import { RouteHelper } from "~/helpers/route-helper";
 import { useMovieApiStore } from "~/store/apiStore";
+
+definePageMeta({ middleware: "auth" });
 
 const getAllMoviesFromStore = useMovieApiStore();
 onMounted(async () => {
