@@ -28,12 +28,18 @@
                 {{ movie.overview }}
               </p>
             </div>
-            <h2 class="text-sm mb-2 text-center pt-2 min-h-[40px]">
+            <h2 class="text-sm mb-2 text-center pt-2 min-h-[45px]">
               {{ movie.title }}
             </h2>
           </NuxtLink>
           <div class="w-full flex justify-center">
-            <StarsRating :initialRating="movie.vote_average / 2" />
+            <v-tooltip :text="`(${movie.vote_count}) reviews`">
+              <template v-slot:activator="{ props }">
+                <div v-bind="props" class="bg-transparent border-none">
+                  <StarsRating :initialRating="movie.vote_average / 2" />
+                </div>
+              </template>
+            </v-tooltip>
           </div>
         </div>
       </div>

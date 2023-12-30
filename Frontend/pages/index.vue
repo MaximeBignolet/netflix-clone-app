@@ -36,7 +36,18 @@
             </p>
           </div>
           <p class="text-gray-500 mr-10 lg:w-2/5">{{ show.overview }}</p>
-          <StarsRating :initialRating="show.vote_average / 2" class="pt-6" />
+          <div class="w-full flex justify-start">
+            <v-tooltip :text="`(${show.vote_count}) reviews`">
+              <template v-slot:activator="{ props }">
+                <div v-bind="props" class="bg-transparent border-none">
+                  <StarsRating
+                    :initialRating="show.vote_average / 2"
+                    class="pt-6"
+                  />
+                </div>
+              </template>
+            </v-tooltip>
+          </div>
           <HomePageCarouselHome />
         </div>
       </div>
