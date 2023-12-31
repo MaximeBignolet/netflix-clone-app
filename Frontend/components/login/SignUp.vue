@@ -11,7 +11,7 @@ const onClickNavigateToLoginPage = () => {
 <template>
   <div>
     <div class="z-20 relative">
-      <NetlixTitle class="absolute top-10 lg:pl-5" />
+      <NetlixTitle class="absolute top-10 h-20 w-auto lg:pl-5" />
       <p
         class="bg-[#E50914] shadow text-white lg:p-1.5 p-1 lg:text-lg text-sm font-bold rounded-md lg:w-1/12 absolute lg:right-8 lg:top-16 right-2 top-16 cursor-pointer text-center"
         @click="onClickNavigateToLoginPage"

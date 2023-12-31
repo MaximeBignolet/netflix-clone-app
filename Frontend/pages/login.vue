@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="z-0">
-      <NetlixTitle />
+      <NetlixTitle class="h-20 w-auto" />
       <LoginModal />
     </div>
   </div>

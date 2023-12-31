@@ -20,10 +20,10 @@
               <img
                 :src="`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`"
                 :alt="movie.overview"
-                class="w-full object-cover shadow-md opacity-80 group-hover:opacity-20 transition-all duration-300"
+                class="anim_container w-full object-cover shadow-md opacity-80 group-hover:opacity-20 transition-all duration-300"
               />
               <p
-                class="absolute top-10 left-2 opacity-0 line-clamp-4 group-hover:opacity-100 transition-opacity duration-300 text-gray-200 font-medium px-4 text-center"
+                class="overview_anim absolute top-10 left-2 opacity-0 line-clamp-4 group-hover:opacity-100 transition-opacity duration-300 text-gray-200 font-medium px-4 text-center"
               >
                 {{ movie.overview }}
               </p>
