@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-between mt-5 lg:pl-10">
-    <NetlixTitle />
+  <div class="flex items-stretch justify-between mt-5 lg:pl-10">
+    <NetlixTitle class="h-20 w-auto" />
     <div
       class="flex justify-end pr-2 font-bold lg:mt-5 -mt-2 cursor-pointer lg:text-xl lg:mr-5"
     >

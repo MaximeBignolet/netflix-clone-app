@@ -1,13 +1,3 @@
-<script setup lang="ts">
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import SignupForm from "~/components/login/SignupForm.vue";
-import { RouteHelper } from "~/helpers/route-helper";
-import CardSignup from "./CardSignup.vue";
-const onClickNavigateToLoginPage = () => {
-  navigateTo(RouteHelper.LOGIN);
-};
-</script>
-
 <template>
   <div>
     <div class="z-20 relative">
@@ -115,6 +105,16 @@ const onClickNavigateToLoginPage = () => {
     <CardSignup />
   </div>
 </template>
+
+<script setup lang="ts">
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import SignupForm from "~/components/login/SignupForm.vue";
+import { RouteHelper } from "~/helpers/route-helper";
+import CardSignup from "./CardSignup.vue";
+const onClickNavigateToLoginPage = () => {
+  navigateTo(RouteHelper.LOGIN);
+};
+</script>
 
 <style lang="css">
 .after-signup,
