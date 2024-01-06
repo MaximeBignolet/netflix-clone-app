@@ -6,4 +6,5 @@
 
 <script setup lang="ts">
 import NavbarVue from "~/components/homePage/Navbar.vue";
+definePageMeta({ middleware: "auth" });
 </script>

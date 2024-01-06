@@ -44,6 +44,7 @@
 import NavbarVue from "~/components/homePage/Navbar.vue";
 import { useMovieVideoByIdStore } from "~/store/getMovieVideos";
 import { useMovieByIdStore } from "~/store/movieByIdStore";
+definePageMeta({ middleware: "auth" });
 
 const route = useRoute();
 
