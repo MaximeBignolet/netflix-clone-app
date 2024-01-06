@@ -27,12 +27,12 @@
             <h2
               class="text-white lg:text-5xl text-2xl lg:w-1/3 lg:pl-28 font-semibold"
             >
-              Films et séries en illimité, et bien plus
+              Unlimited movies and series, and much more.
             </h2>
             <p
               class="text-white lg:text-xl lg:w-1/3 lg:pl-28 font-semibold mt-5"
             >
-              À partir de 5,99€. Annulez à tout moment.
+              Starting at $5.99. Cancel at any time."
             </p>
           </div>
         </v-carousel-item>
@@ -49,7 +49,7 @@
                 <font-awesome-icon
                   icon="fire"
                   class="text-[#FF8A15] mr-2"
-                /><span class="text-white">Tendances actuelles</span>
+                /><span class="text-white">Current trends</span>
               </p>
               <img
                 src="/carousel-signup/carousel-christmas-paragraph.webp"
@@ -57,9 +57,9 @@
                 class="h-20 lg:pl-28 my-3"
               />
               <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
-                Lorsqu'un coup du destin réunit leurs familles pour Noël,
-                Charlotte saisit l'occasion de démontrer que la vie de sa
-                vieille amie Jackie est trop belle pour être vraie.
+                When fate brings their families together for Christmas,
+                Charlotte seizes the opportunity to prove that her old friend
+                Jackie's life is too good to be true.
               </p>
             </div>
             <div class="lg:w-2/5 lg:pl-28 mt-2"></div>
@@ -78,7 +78,7 @@
                 <font-awesome-icon
                   icon="fire"
                   class="text-[#FF8A15] lg:mr-2"
-                /><span class="text-white">Tendances actuelles</span>
+                /><span class="text-white">Current trends</span>
               </p>
               <img
                 src="/carousel-signup/the_crown_paragraph.webp"
@@ -86,9 +86,9 @@
                 class="lg:pl-28 h-14 py-3"
               />
               <p class="text-white text-base my-3 lg:w-[38%] lg:pl-28 mt-5">
-                Inspirée de faits réels, cette adaptation retrace l'histoire de
-                la reine Élisabeth II, évoquant les événements politiques et
-                personnels qui ont marqué son règne.
+                Inspired by real events, this adaptation recounts the story of
+                Queen Elizabeth II, highlighting the political and personal
+                events that have marked her reign.
               </p>
             </div>
             <div class="lg:w-2/5 lg:pl-28 mt-2"></div>

@@ -15,8 +15,8 @@ const onClickGoToRegistration = () => {
 
 <template>
   <p class="text-[#C9C8C7] text-lg font-light">
-    Prêt à regarder Devflix ? Saisissez votre adresse e-mail pour vous abonner
-    ou réactiver votre abonnement.
+    Ready to watch Devflix? Enter your email address to subscribe or reactivate
+    your subscription.
   </p>
   <form method="post" @submit.prevent="onClickGoToRegistration">
     <div class="flex items-center mt-2 gap-2">
@@ -24,7 +24,7 @@ const onClickGoToRegistration = () => {
         type="email"
         name="email"
         id=""
-        placeholder="Adresse email"
+        placeholder="Email address"
         class="placeholder:text-[#B7BAB8] lg:w-72 text-white"
         required
         v-model="email"
@@ -33,7 +33,7 @@ const onClickGoToRegistration = () => {
         type="submit"
         class="text-center text-white text-2xl bg-[#E50914] p-1.5 shadow rounded lg:w-44"
       >
-        Commencer
+        Start
       </button>
     </div>
   </form>
