@@ -6,7 +6,7 @@
         class="bg-[#E50914] shadow text-white lg:p-1.5 p-1 lg:text-lg text-sm font-bold rounded-md lg:w-1/12 absolute lg:right-8 lg:top-16 right-2 top-16 cursor-pointer text-center"
         @click="onClickNavigateToLoginPage"
       >
-        S'identifier
+        Login
       </p>
     </div>
     <div class="relative">
